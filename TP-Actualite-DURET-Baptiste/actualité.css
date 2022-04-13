@@ -1,0 +1,134 @@
+*{
+    color: lightslategray;
+}
+body{
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    flex-direction: column;
+}
+div>ul>li{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    
+    align-items: start;
+}
+h2{
+    margin: 5px;
+}
+div>ul>li:first-child{
+    border: 1px solid lightgray;
+    border-left: 10px solid green;
+}
+ul li img{
+    margin: 10px;
+    flex-basis: initial;
+    flex-grow: 1;
+}
+ul li p{
+    align-self: flex-end;
+}
+h3{
+    height: 50px;
+}
+ul li div ~ *{
+    flex-direction: column;
+}
+ul li div{
+    padding: 10px;
+}
+* a{
+    color: green;
+    text-decoration: none;
+}
+ul li ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ul li ul li a{
+    display: block;
+    margin-left: 10px;
+}
+ul li ul li div{
+    flex-direction: column;
+}
+div div{
+    flex-direction: column;
+}
+.width1005{
+    width: 1005px;
+}
+.width400{
+    width: 400px;
+}
+.margin20{
+    margin: 20px 20px 30px 20px;
+}
+div div ul li img{
+    width:100%;
+    margin: 30px 0 10px 0;
+}
+ div ul.width1005 li ~ li:not(.exclu){
+    border-bottom: 1px dashed lightgray;
+}
+div>ul:last-child{
+    border-bottom:1px solid lightgray ;
+}
+body>div{
+    margin: 30px;
+}
+.width300{
+    width: 300px;
+}
+body>div:last-child ul li ~ li:not(.exclu){
+    display: flex; 
+    justify-content: center;
+}
+body>div:last-child>ul>li>h2{
+    display: flex; 
+    justify-content: start;
+}
+hr{
+    margin: 8px 40px;
+}
+body:last-child div>ul :last-child hr{
+    margin-bottom: 30px;
+}
+body div:last-child>img{
+    width: 300px;
+    height: 1500px;
+    margin-top: 30px;
+}
+.contentcolumn{
+    flex-direction: column;
+}
+div>div>ul.flex.width1005>li>img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+div>div.width1005 ul li img{
+    width: 220px;
+    height: 150px;
+}
+h3.margin20{
+    height: 25px;
+}
+body :first-child :last-child ul.only img{
+    margin-top: 0;
+}
+div>div>div.flex{
+    margin-bottom: 40px;
+}
