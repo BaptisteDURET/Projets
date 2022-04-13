@@ -1,0 +1,1 @@
+Utilisation de phpMyAdmin pour utiliser la base de données
